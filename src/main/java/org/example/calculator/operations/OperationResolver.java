@@ -9,7 +9,7 @@ import java.util.Optional;
 import static org.example.calculator.operations.OperationList.*;
 
 public class OperationResolver {
-    final static Map<String, Operation> OPERATION_MAP = new HashMap<>();
+    private static final Map<String, Operation> OPERATION_MAP = new HashMap<>();
 
     static {
         OPERATION_MAP.put(OPERATION.getAdd(), new AddImpl());
