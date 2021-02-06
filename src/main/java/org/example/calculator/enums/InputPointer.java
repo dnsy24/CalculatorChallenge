@@ -1,4 +1,4 @@
-package org.example.calculator.data;
+package org.example.calculator.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

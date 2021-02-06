@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-import static org.example.calculator.operations.OperationList.*;
+import static org.example.calculator.enums.OperationList.*;
 
 public class OperationResolver {
     private static final Map<String, Operation> OPERATION_MAP = new HashMap<>();

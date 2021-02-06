@@ -8,7 +8,7 @@ import org.example.calculator.operations.OperationResolver;
 import java.util.List;
 
 import static org.example.calculator.data.DataInputHandler.inputData;
-import static org.example.calculator.data.InputPointer.*;
+import static org.example.calculator.enums.InputPointer.*;
 
 public class Calculator {
     public static double calculate() {
