@@ -5,9 +5,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class DataInputHandler {
+    private static final String MESSAGE = "Enter two numbers and operation (+, -, *, /)";
 
     public static List<String> inputData() {
-        System.out.println("Enter two numbers and operation (+, -, *, /)");
+        System.out.println(MESSAGE);
         return new ArrayList<>() {{
             add(new Scanner(System.in).nextLine());
             add(new Scanner(System.in).nextLine());
