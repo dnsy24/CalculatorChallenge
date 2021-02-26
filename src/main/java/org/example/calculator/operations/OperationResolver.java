@@ -16,6 +16,7 @@ public class OperationResolver {
         OPERATION_MAP.put(OPERATION.getSubtract(), new SubtractImpl());
         OPERATION_MAP.put(OPERATION.getMultiply(), new MultiplyImpl());
         OPERATION_MAP.put(OPERATION.getDelete(), new DivideImpl());
+        OPERATION_MAP.put(OPERATION.getSquare(), new SquareImpl());
     }
 
     public static Optional<Operation> getOperation(String operator) {

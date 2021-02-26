@@ -11,8 +11,11 @@ public class DataInputHandler {
     public static List<String> inputData() {
         print(MESSAGE.getMessage());
         return new ArrayList<>() {{
+            print("first number: ");
             add(new Scanner(System.in).nextLine());
+            print("second number or press enter to skip: ");
             add(new Scanner(System.in).nextLine());
+            print("operation: ");
             add(new Scanner(System.in).nextLine());
         }};
     }
