@@ -15,14 +15,14 @@ import static org.example.calculator.utils.StringToDoubleResolver.getDoubleFromS
 public class Calculator {
     public static double calculate() {
         List<String> dataArr = inputData();
-        final double numberOne = getDoubleFromString(dataArr.get(INPUT_ONE.getInput()));
-        final double numberTwo = getDoubleFromString(dataArr.get(INPUT_TWO.getInput()));
+        final double inputOne = getDoubleFromString(dataArr.get(INPUT_ONE.getInput()));
+        final double inputTwo = getDoubleFromString(dataArr.get(INPUT_TWO.getInput()));
         final String operationInput = dataArr.get(INPUT_THREE.getInput());
-        if (numberTwo == 0 && !operationInput.contains(OPERATION.getSquare()))
+        if (inputTwo == 0 && !operationInput.contains(OPERATION.getSquare()))
             throw new IncorrectInputException("Check your input values");
         Operation operation = OperationResolver
                 .getOperation(operationInput)
                 .orElseThrow(() -> new OperationNotFoundException("Invalid Operation " + operationInput));
-        return operation.apply(numberOne, numberTwo);
+        return operation.apply(inputOne, inputTwo);
     }
 }

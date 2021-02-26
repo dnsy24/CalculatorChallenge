@@ -1,7 +1,6 @@
 package org.example.calculator.enums;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.*;
 
 @Getter
 @AllArgsConstructor
