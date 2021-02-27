@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static org.example.calculator.utils.Helper.print;
+import static org.example.calculator.utils.Printer.print;
 
 public class DataInputHandler {
     public static List<String> inputData() {

@@ -5,7 +5,7 @@ import io.vavr.control.Try;
 public class StringToDoubleResolver {
 
     /**@param input is a String value which will be converted to double.
-     * if input is empty the returned default value will 0.0
+     * if input is empty the returned default value will be 0.0
      * */
 
     public static double getDoubleFromString(String input) {
